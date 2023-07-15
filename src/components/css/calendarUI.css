@@ -1,0 +1,45 @@
+.cell {
+    padding: 5px;
+    text-align: center;
+    border-width: 1.5px;
+    border-color: rgba(44, 41, 41, 0.514);
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.border{
+    border-width: 1.5px;
+    border-color:rgb(44, 41, 41);
+
+} 
+    
+.date{
+    background: #f4b084;
+    width: 15%;
+    
+}
+
+.day{
+    background: #ffe699;
+    width: 10%;
+}
+
+.menu{
+    background: #c6e0b4;
+    width: 20%;
+}
+
+.quality{
+    background: #9bc2e6;
+    width: 15%;
+}
+
+.signature{
+    background: #bfbfbf;
+    width: 20%;
+}
+
+.remarks{
+    background: #8497b0;
+    width: 15%;
+}
