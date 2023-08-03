@@ -891,27 +891,27 @@ export class CalendarUI extends Component {
         </div>
         <div ref={(el) => (this.componentRef = el)}>
           {/* details */}
-          <div className="border p-1">
-            <h1 className=" font-extrabold text-xl text-center font-serif text-slate-800">
+          <div className="border px-1">
+            <h1 className=" text-lg text-center font-serif text-slate-800">
               KAJIPARA SIKSHA NIKETAN C.S PRY SCHOOL
             </h1>
-            <h1 className=" font-semibold text-lg text-center font-mono text-slate-700">
+            <h1 className=" text-md text-center font-mono text-slate-700">
               DAILY MID DAY MEAL TESTING COPY
             </h1>
             <div className=" px-24">
-              <h1 className=" text-right text-sm font-medium">Dice Code : </h1>
-              <h1 className=" text-right text-sm font-medium">
+              <h1 className=" text-right text-xs font-medium">Dice Code : </h1>
+              <h1 className=" text-right text-xs font-medium">
                 MDM incharge :{" "}
               </h1>
-              <h1 className=" text-right text-sm font-medium">
+              <h1 className=" text-right text-xs font-medium">
                 Per Student Costing :{" "}
               </h1>
             </div>
             <div>
-              <h1 className=" font-extrabold text-md text-left font-mono text-stone-800">
+              <h1 className=" font-extrabold text-xs text-left font-mono text-stone-800">
                 Year : {year}
               </h1>
-              <h1 className=" font-extrabold text-md text-left font-mono text-stone-800">
+              <h1 className=" font-extrabold text-xs text-left font-mono text-stone-800">
                 Month : {month}
               </h1>
             </div>
@@ -921,22 +921,22 @@ export class CalendarUI extends Component {
             {/* headers */}
             <div className="table-header-group">
               <div className="table-row">
-                <div className="table-cell  text-left cell date font-bold">
+                <div className="table-cell  text-left cell date  text-xs">
                   Dates (dd/mm/yyyy)
                 </div>
-                <div className="table-cell text-left cell day font-bold ">
+                <div className="table-cell text-left cell day  text-xs ">
                   Day{" "}
                 </div>
-                <div className="table-cell text-left cell menu font-bold">
+                <div className="table-cell text-left cell menu  text-xs">
                   Menu
                 </div>
-                <div className="table-cell text-left cell quality font-bold">
+                <div className="table-cell text-left cell quality  text-xs">
                   Quality
                 </div>
-                <div className="table-cell text-left cell signature font-bold">
+                <div className="table-cell text-left cell signature  text-xs">
                   Signature
                 </div>
-                <div className="table-cell text-left cell remarks font-bold">
+                <div className="table-cell text-left cell remarks  text-xs">
                   Remarks
                 </div>
               </div>
@@ -946,17 +946,17 @@ export class CalendarUI extends Component {
               {monthData.map((index) => {
                 return (
                   <div className="table-row">
-                    <div className="table-cell cell  font-medium date">
+                    <div className="table-cell cell text-xs date">
                       {index} / {month_index[month.toLowerCase()]} / {year}
                     </div>
-                    <div className="table-cell cell  font-medium day">
+                    <div className="table-cell cell text-xs day">
                       {getDayOfWeek(
                         year,
                         month_index[month.toLowerCase()],
                         index
                       )}
                     </div>
-                    <div className="table-cell cell  font-medium menu">
+                    <div className="table-cell cell text-xs menu">
                       {displayMenu(
                         getDayOfWeek(
                           year,
@@ -965,9 +965,9 @@ export class CalendarUI extends Component {
                         )
                       )}
                     </div>
-                    <div className="table-cell cell  font-medium quality"></div>
-                    <div className="table-cell cell  font-medium signature"></div>
-                    <div className="table-cell cell  font-medium remarks"></div>
+                    <div className="table-cell cell text-xs quality"></div>
+                    <div className="table-cell cell text-xs signature"></div>
+                    <div className="table-cell cell text-xs remarks"></div>
                   </div>
                 );
               })}
