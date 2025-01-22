@@ -893,7 +893,7 @@ export class CalendarUI extends Component {
           {/* details */}
           <div className="border px-1">
             <h1 className=" text-lg text-center font-serif text-slate-800">
-              KAJIPARA SIKSHA NIKETAN C.S PRY SCHOOL
+              GADONG NUMBER 2 JUNIOR BASIC SCHOOL
             </h1>
             <h1 className=" text-md text-center font-mono text-slate-700">
               DAILY MID DAY MEAL TESTING COPY
